@@ -1,9 +1,5 @@
-#!/bin/bash
-
-# Read year input from user
+#!/bin/bash -x
 read -p "Enter a year: " year
-
-# Check if year is a leap year or not
 if (( year % 4 == 0 && ( year % 100 != 0 || year % 400 == 0 ) )); then
     echo "$year is a leap year."
 else
